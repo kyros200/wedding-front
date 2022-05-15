@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Landing from './pages/Landing';
-import Entries from './pages/Entries';
+import RSVP from './pages/RSVP';
 import Error from './pages/Error';
 import PageLayout from './layouts/PageLayout';
 import { ToastContainer } from 'react-toastify';
@@ -31,11 +30,9 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PageLayout />}>
-            <Route index element={<Landing />} />
-            <Route path="entries" element={<Entries />} />
+            <Route index element={<>Tela principal funcionando! Cabeçalho e Rodapé são só pra dizer que tem coisas</>} />
             <Route path="error" element={<Error />} />
-            <Route path="me" element={<>About Me</>} />
-            <Route path="about" element={<>About Hatch</>} />
+            <Route path="rsvp" element={<RSVP />} />
           </Route>
         </Routes> 
       </BrowserRouter>
