@@ -1,0 +1,20 @@
+@import '../../../variables';
+
+.main-link {
+    font-size: 28px;
+    text-decoration: none;
+    color: $text-color;
+
+    &:first-child {
+        margin-bottom: 16px;
+    }
+
+    .hatch {
+        font-family: 'Righteous', cursive;
+    }
+
+    .image {
+        height: 28px;
+        margin-left: 6px;
+    }
+}
