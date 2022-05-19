@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Landing from './pages/Landing';
 import RSVP from './pages/RSVP';
 import Quiz from './pages/Quiz';
 import Error from './pages/Error';
@@ -32,7 +33,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PageLayout />}>
-            <Route index element={<>Tela principal funcionando! Cabeçalho e Rodapé são só pra dizer que tem coisas</>} />
+            <Route index element={<Landing />} />
             <Route path="error" element={<Error />} />
             <Route path="rsvp" element={<RSVP />} />
             <Route path="quiz" element={<Quiz />} />
