@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import RSVP from './pages/RSVP';
+import Quiz from './pages/Quiz';
 import Error from './pages/Error';
 import PageLayout from './layouts/PageLayout';
 import { ToastContainer } from 'react-toastify';
@@ -26,6 +27,7 @@ ReactDOM.render(
         pauseOnFocusLoss={false}
         draggable={false}
         pauseOnHover={false}
+        theme = "colored"
       />
       <BrowserRouter>
         <Routes>
@@ -33,6 +35,7 @@ ReactDOM.render(
             <Route index element={<>Tela principal funcionando! Cabeçalho e Rodapé são só pra dizer que tem coisas</>} />
             <Route path="error" element={<Error />} />
             <Route path="rsvp" element={<RSVP />} />
+            <Route path="quiz" element={<Quiz />} />
           </Route>
         </Routes> 
       </BrowserRouter>
